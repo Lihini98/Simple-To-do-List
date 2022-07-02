@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
 
@@ -46,19 +47,17 @@ deleteItem(id){
 
     
       <div className="App">
-        <h1>TO DO LIST</h1>
-        <div>
-          Add an Item...
+        <h1 className="header">TO DO LIST</h1>
+        <div className="container">
+          <p class="h5">Add an Item...</p>
           <br/>
           <input
-            type="text"
+             type="text"
             placeholder="Type item here..."
             value={this.state.newItem}
             onChange={e => this.updateInput("newItem", e.target.value)}
-          />
-          <button
-            onClick={() => this.addItem()}
-          >
+          />&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-primary" onClick={() => this.addItem()}>
             Add
           </button>
           <br/>
@@ -67,7 +66,7 @@ deleteItem(id){
               return(
                 <li key={item.id}>
                   {item.value}
-                  <button
+                  <button type="button" class="btn btn-danger"
                     onClick={() => this.deleteItem(item.id)}
                 >
                   X
