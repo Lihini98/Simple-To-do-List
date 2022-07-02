@@ -1,18 +1,38 @@
-h1 {
+.header {
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 20vh;
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(20px + 2vmin);
+  font-size: calc(30px + 2vmin);
   color: white;
 }
 
-body{
-  background: rgb(135, 146, 159);
+*{
+  background: rgb(189, 214, 243);
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  align-items: center;
 }
+
+p{
+  font-size: calc(10px + 2vmin);
+}
+
+.container{
+  text-align: center;
+  justify-content: center;
+  border: 5px solid rgb(34, 80, 107);
+  border-radius: 10px;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+}
+
+
